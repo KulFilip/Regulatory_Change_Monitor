@@ -11,7 +11,7 @@ interface FilterBarProps {
 
 const jurisdictions: (Jurisdiction | 'all')[] = ['all', 'EU', 'Ireland', 'UK', 'US'];
 const statuses: (Status | 'all')[] = ['all', 'proposed', 'consultation', 'enacted', 'amended', 'withdrawn'];
-const categories: (Category | 'all')[] = ['all', 'Banking', 'Markets', 'Insurance', 'Payments', 'Crypto', 'ESG', 'Data', 'AML'];
+const categories: (Category | 'all')[] = ['all', 'Banking', 'Markets', 'Insurance', 'Payments', 'Crypto', 'ESG', 'Data', 'AML', 'AI', 'Resilience'];
 
 export function FilterBar({
   selectedJurisdiction,

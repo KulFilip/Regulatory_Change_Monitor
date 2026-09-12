@@ -58,7 +58,7 @@ export function RegulationDetail({ regulation, onClose }: RegulationDetailProps)
         {/* Content */}
         <div className="p-8 pt-6">
           {/* Meta grid */}
-          <div className="grid grid-cols-3 gap-4 p-4 bg-neutral-50 rounded-lg mb-6">
+          <div className="grid grid-cols-4 gap-4 p-4 bg-neutral-50 rounded-lg mb-6">
             <div>
               <p className="text-[10px] text-neutral-400 uppercase tracking-wider mb-1">Reference</p>
               <p className="text-xs text-neutral-700 font-medium">{regulation.reference}</p>
@@ -77,6 +77,10 @@ export function RegulationDetail({ regulation, onClose }: RegulationDetailProps)
               }`}>
                 {regulation.impact.charAt(0).toUpperCase() + regulation.impact.slice(1)}
               </p>
+            </div>
+            <div>
+              <p className="text-[10px] text-neutral-400 uppercase tracking-wider mb-1">Source</p>
+              <p className="text-xs text-neutral-700 font-medium">{regulation.source}</p>
             </div>
           </div>
 

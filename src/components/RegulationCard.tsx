@@ -1,4 +1,4 @@
-import { Regulation, Status, Jurisdiction } from '../data/regulations';
+import { Regulation } from '../data/regulations';
 import { StatusBadge } from './StatusBadge';
 import { JurisdictionBadge } from './JurisdictionBadge';
 
@@ -32,6 +32,8 @@ export function RegulationCard({ regulation, onClick }: RegulationCardProps) {
           </p>
           <div className="mt-3 flex items-center gap-3">
             <span className="text-[11px] text-neutral-400">{regulation.category}</span>
+            <span className="text-neutral-200">·</span>
+            <span className="text-[11px] text-neutral-400">{regulation.source}</span>
             <span className="text-neutral-200">·</span>
             <span className="text-[11px] text-neutral-400">{regulation.reference}</span>
           </div>

@@ -39,6 +39,12 @@ function App() {
               </p>
             </div>
           </div>
+
+          {/* Introduction */}
+          <p className="mt-6 text-sm text-neutral-600 leading-relaxed max-w-3xl">
+            Platforma monitorująca zmiany w prawie finansowym w jurysdykcjach UE, Irlandii, Wielkiej Brytanii i Stanów Zjednoczonych.
+            Dane pochodzą z oficjalnych źródeł regulacyjnych — EUR-Lex, ESMA, EBA, EIOPA, Central Bank of Ireland, FCA, PRA, SEC oraz Federal Register.
+          </p>
         </div>
       </header>
 
@@ -95,8 +101,21 @@ function App() {
       <footer className="border-t border-neutral-100 mt-16">
         <div className="max-w-6xl mx-auto px-6 py-6">
           <p className="text-xs text-neutral-400">
-            Intelligence platform tracking legislative developments across Irish, UK and EU financial services regulatory frameworks.
+            Intelligence platform tracking legislative developments across Irish, UK, EU and US financial services regulatory frameworks.
           </p>
+          <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1">
+            <span className="text-[10px] text-neutral-300 uppercase tracking-wider">Sources:</span>
+            <span className="text-[10px] text-neutral-400">EUR-Lex</span>
+            <span className="text-[10px] text-neutral-400">ESMA</span>
+            <span className="text-[10px] text-neutral-400">EBA</span>
+            <span className="text-[10px] text-neutral-400">EIOPA</span>
+            <span className="text-[10px] text-neutral-400">Central Bank of Ireland</span>
+            <span className="text-[10px] text-neutral-400">FCA</span>
+            <span className="text-[10px] text-neutral-400">PRA</span>
+            <span className="text-[10px] text-neutral-400">SEC</span>
+            <span className="text-[10px] text-neutral-400">Federal Register</span>
+            <span className="text-[10px] text-neutral-400">HM Treasury</span>
+          </div>
         </div>
       </footer>
     </div>
