@@ -42,8 +42,8 @@ function App() {
 
           {/* Introduction */}
           <p className="mt-6 text-sm text-neutral-600 leading-relaxed max-w-3xl">
-            Platforma monitorująca zmiany w prawie finansowym w jurysdykcjach UE, Irlandii, Wielkiej Brytanii i Stanów Zjednoczonych.
-            Dane pochodzą z oficjalnych źródeł regulacyjnych — EUR-Lex, ESMA, EBA, EIOPA, Central Bank of Ireland, FCA, PRA, SEC oraz Federal Register.
+            Intelligence platform tracking legislative developments across EU, Irish, UK and US financial services regulatory frameworks.
+            Data sourced from official regulatory bodies including EUR-Lex, ESMA, EBA, EIOPA, Central Bank of Ireland, FCA, PRA, SEC and Federal Register.
           </p>
         </div>
       </header>

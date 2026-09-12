@@ -22,21 +22,22 @@ export function FilterBar({
   onCategoryChange,
 }: FilterBarProps) {
   return (
-    <div className="space-y-5">
+    <div className="space-y-6">
       {/* Jurisdiction */}
       <div>
-        <label className="text-xs text-neutral-400 uppercase tracking-wider block mb-2.5">
+        <label className="text-xs text-neutral-400 uppercase tracking-wider block mb-3 font-medium">
           Jurisdiction
         </label>
         <div className="flex flex-wrap gap-2">
           {jurisdictions.map((j) => (
             <button
               key={j}
+              type="button"
               onClick={() => onJurisdictionChange(j)}
-              className={`px-3.5 py-1.5 text-xs rounded-full transition-all duration-200 ${
+              className={`px-4 py-2 text-xs font-medium rounded-full transition-all duration-200 border ${
                 selectedJurisdiction === j
-                  ? 'bg-neutral-900 text-white'
-                  : 'bg-neutral-50 text-neutral-600 hover:bg-neutral-100'
+                  ? 'bg-neutral-900 text-white border-neutral-900 shadow-sm'
+                  : 'bg-white text-neutral-700 border-neutral-200 hover:border-neutral-400 hover:bg-neutral-50'
               }`}
             >
               {j === 'all' ? 'All' : j}
@@ -47,18 +48,19 @@ export function FilterBar({
 
       {/* Status */}
       <div>
-        <label className="text-xs text-neutral-400 uppercase tracking-wider block mb-2.5">
+        <label className="text-xs text-neutral-400 uppercase tracking-wider block mb-3 font-medium">
           Status
         </label>
         <div className="flex flex-wrap gap-2">
           {statuses.map((s) => (
             <button
               key={s}
+              type="button"
               onClick={() => onStatusChange(s)}
-              className={`px-3.5 py-1.5 text-xs rounded-full transition-all duration-200 ${
+              className={`px-4 py-2 text-xs font-medium rounded-full transition-all duration-200 border ${
                 selectedStatus === s
-                  ? 'bg-neutral-900 text-white'
-                  : 'bg-neutral-50 text-neutral-600 hover:bg-neutral-100'
+                  ? 'bg-neutral-900 text-white border-neutral-900 shadow-sm'
+                  : 'bg-white text-neutral-700 border-neutral-200 hover:border-neutral-400 hover:bg-neutral-50'
               }`}
             >
               {s === 'all' ? 'All' : capitalize(s)}
@@ -69,18 +71,19 @@ export function FilterBar({
 
       {/* Category */}
       <div>
-        <label className="text-xs text-neutral-400 uppercase tracking-wider block mb-2.5">
+        <label className="text-xs text-neutral-400 uppercase tracking-wider block mb-3 font-medium">
           Category
         </label>
         <div className="flex flex-wrap gap-2">
           {categories.map((c) => (
             <button
               key={c}
+              type="button"
               onClick={() => onCategoryChange(c)}
-              className={`px-3.5 py-1.5 text-xs rounded-full transition-all duration-200 ${
+              className={`px-4 py-2 text-xs font-medium rounded-full transition-all duration-200 border ${
                 selectedCategory === c
-                  ? 'bg-neutral-900 text-white'
-                  : 'bg-neutral-50 text-neutral-600 hover:bg-neutral-100'
+                  ? 'bg-neutral-900 text-white border-neutral-900 shadow-sm'
+                  : 'bg-white text-neutral-700 border-neutral-200 hover:border-neutral-400 hover:bg-neutral-50'
               }`}
             >
               {c === 'all' ? 'All' : c}
